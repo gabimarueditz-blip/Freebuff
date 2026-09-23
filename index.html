@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Freebuff - give useful things a second life in your neighborhood." />
+  <title>Freebuff | Good things, going places</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Freebuff home"><span class="brand-mark">+</span> freebuff</a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="active" href="#browse">Browse</a><a href="#how-it-works">How it works</a><a href="#impact">Impact</a></nav>
+    <button class="button button-dark header-post" data-open-post><span>+</span> Give something</button>
+    <button class="menu-button" aria-label="Open menu">&#9776;</button>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">A neighborhood exchange <span class="line"></span> since now</p><h1>Good things,<br /><em>going places.</em></h1><p class="hero-intro">The simple way to pass on useful stuff, find what you need, and keep great things in circulation.</p><div class="hero-actions"><a class="button button-accent" href="#browse">Find free stuff <span>&darr;</span></a><button class="text-button" data-open-post>Have something to give? <span>&rarr;</span></button></div></div>
+      <div class="hero-art" aria-label="Illustration of a chair, plant, and lamp available for free"><div class="sun"></div><div class="art-label label-top">01 / still useful</div><div class="art-label label-bottom">take what you need<br />leave what you can</div><div class="plant"><i></i><i></i><i></i><div class="pot"></div></div><div class="lamp"><div class="shade"></div><div class="stem"></div><div class="foot"></div></div><div class="chair"><div class="chair-back"></div><div class="chair-seat"></div><div class="chair-leg left"></div><div class="chair-leg right"></div></div><div class="art-floor"></div></div>
+    </section>
+    <section class="stats" id="impact"><div><strong>12,480</strong><span>things rehomed</span></div><div><strong>4,206</strong><span>happy neighbors</span></div><div><strong>18.4t</strong><span>kept out of landfill</span></div><p>Small exchanges.<br /><b>Real impact.</b></p></section>
+    <section class="browse-section" id="browse"><div class="section-heading"><div><p class="eyebrow">What's around you</p><h2>Find your next <em>favorite thing.</em></h2></div><span class="location">&#9679; Oakland, CA <button aria-label="Change location">&#8964;</button></span></div><div class="browse-tools"><div class="search-wrap"><span>&#8981;</span><input id="search" type="search" placeholder="Search desks, plants, bikes..." /></div><div class="filters" role="group" aria-label="Filter items"><button class="filter active" data-category="All">All</button><button class="filter" data-category="Furniture">Furniture</button><button class="filter" data-category="Home">Home</button><button class="filter" data-category="Outdoors">Outdoors</button></div></div><div class="item-grid" id="item-grid"></div><p class="empty-state" id="empty-state">Nothing matches that search yet. Try a different word.</p><div class="browse-footer"><span>Showing <b id="item-count">6</b> nearby items</span><button class="text-button" id="load-more">See all listings <span>&rarr;</span></button></div></section>
+    <section class="how-section" id="how-it-works"><div class="how-title"><p class="eyebrow">Three easy moves</p><h2>Make room for<br /><em>good things.</em></h2></div><div class="steps"><article><span>01</span><h3>Post it</h3><p>Snap a photo, add a few details, and let your neighbors know what is ready for a new home.</p></article><article><span>02</span><h3>Find it</h3><p>Browse nearby listings and message the person giving it away. No price tags, no awkward haggling.</p></article><article><span>03</span><h3>Pass it on</h3><p>When you are done, keep the good loop moving. Someone else is looking for exactly what you have.</p></article></div></section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">+</span> freebuff</a><p>Useful things deserve another go.</p><span class="footer-note">Made for neighbors, by neighbors.</span></footer>
+  <dialog id="post-dialog"><button class="dialog-close" aria-label="Close">&times;</button><p class="eyebrow">Give something a second life</p><h2>What are you<br /><em>passing on?</em></h2><form id="post-form"><label>Item name<input required name="name" placeholder="e.g. Blue ceramic planter" /></label><label>Category<select name="category"><option>Home</option><option>Furniture</option><option>Outdoors</option></select></label><label>Neighborhood<input required name="location" placeholder="e.g. Temescal" /></label><button class="button button-accent" type="submit">Post for free <span>&rarr;</span></button></form></dialog>
+  <script src="app.js"></script>
+</body>
+</html>

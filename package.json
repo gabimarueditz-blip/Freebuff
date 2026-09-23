@@ -1,0 +1,9 @@
+{
+  "name": "freebuff",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A neighborhood exchange app for giving useful things a second life.",
+  "scripts": {
+    "start": "python3 -m http.server 8000"
+  }
+}
