@@ -1,4 +1,4 @@
-const redirectUrl = document.querySelector('#enter-button').dataset.redirect;
+const redirectUrl = 'https://hinatawtv.freebuff.app/';
 
 function redirectToUniverse() {
   window.location.href = redirectUrl;
